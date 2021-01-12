@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>StudentsRecord</title>
+
+        <style>
+            .space{
+                padding-left: 60px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="jumbotron">
+                <table>
+                    <thead style="text-align: center;">
+                        <tr>
+                            <th class="space">Email</th>
+                            <th class="space">Starting Date</th>
+                            <th class="space">Date</th>
+                            <th class="space">Shift</th>
+                            <th class="space">Starting time</th>
+                            <th class="space">Ending time</th>
+                            <th class="space">Day</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center;">
+                        {% for i in item %}
+                        <tr>
+                            <td class="">{{ i.emailaddress }}</td>
+                            <td class="space">{{ i.startdate }}</td>
+                            <td class="space">{{ i.dates }}</td>
+                            <td class="space">{{ i.shift }}</td>
+                            <td class="space">{{ i.starttime }}</td>
+                            <td class="space">{{ i.endtime }}</td>
+                            <td class="space">{{ i.days }}</td>
+                        </tr>
+                            {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

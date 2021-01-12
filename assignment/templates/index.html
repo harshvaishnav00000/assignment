@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <title>StudentsRecord</title>
+
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="jumbotron">
+                <form method="get" action="/join">
+                  <p>Email</p>
+                  <input type="text" name="emailaddress" id="emailaddress">
+                    <p>Start Date</p>
+                    <input type="text" name="startdate" id="startdate">
+                    <p>Select Repeat date</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label >
+                                <input class="active"type="radio" name="dates" id="dates" value="none"> none</label>
+                              <label>
+                                <input class="" type="radio" name="dates" id="dates" value="daily"> daily </label>
+                              <label>
+                                <input class="" type="radio" name="dates" id="dates" value="weekly"> weekly </label>
+                        </ul>
+                    </div>
+                    <p>Select Shift</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label class="active">
+                                <input type="radio" name="shift" id="shift" value="5am to 9am"> 5am to 9am
+                            </label>
+                        </ul>
+                    </div>
+                    <p>Start time</p>
+                    <input type="text" name="starttime" id="starttime">
+                    <p>End time</p>
+                    <input type="text" name="endtime" id="endtime">
+                    <div>
+                        <p>Please select the day of the week</p>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label class="active">
+                              <input type="radio" name="days" id="days" value="1"> MON
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="2"> TUE
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="3"> WED
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="4"> THUR
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="5"> FRI
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="6"> SAT
+                            </label>
+                            <label class="">
+                              <input type="radio" name="days" id="days" value="7"> SUN
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" style="float: right;">ADD +</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
